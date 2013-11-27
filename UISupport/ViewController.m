@@ -17,6 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   // self.navigationController.navigationBar.translucent = NO;
+    [self.navigationController setNavigationBarHidden:YES];
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+        self.edgesForExtendedLayout = UIRectEdgeNone;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -27,3 +31,6 @@
 }
 
 @end
+
+
+
